@@ -1,0 +1,10 @@
+//Using Regular expression in checking if the number is a valid US number
+function telephoneCheck(str) {
+  //using regular expression to check if the number is valid
+  const regex =  /^(1\s?)?(\(\d{3}\)|\d{3})([\s\-]?)\d{3}([\s\-]?)\d{4}$/;
+
+  //Test the string against the regular expression
+   return regex.test(str);
+}
+
+telephoneCheck("555-555-5555");
